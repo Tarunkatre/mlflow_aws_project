@@ -35,10 +35,10 @@ pipenv shell
 aws configure
 
 #final
-mlflow server -h 0.0.0.0 --default-arctifact-root s3://mlflow-buc23
+mlflow server -h 0.0.0.0 --default-arctifact-root s3://bucket-name
 
 #open public IPv4 DNS to the port 5000
 
 #set uri in your local terminal and in your code
-export MLFLOW_TRACKING_URI = http://ec2-44-201-179-129.compute-1.amazonaws.com:5000/
+export MLFLOW_TRACKING_URI = this url you need to get by taking the IPv4 address of the instance:port_number also set this to the remote_server_uri in the app.py file
 ```
